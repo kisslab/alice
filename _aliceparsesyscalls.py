@@ -592,11 +592,18 @@ def __get_micro_op(syscall_tid, line, stackinfo, mtrace_recorded):
 							print "Warning: File unlinked while being mapped: " + name
 					else:
 						os.rename(replayed_path(name), replayed_path(name) + '.deleted_' + str(uuid.uuid1()))
-	elif parsed_line.syscall in ['lseek', 'llseek', '_llseek']:
+	elif parsed_line.syscall in ['lseek', 'llseek']:
 		if int(parsed_line.ret) != -1:
 			fd = safe_string_to_int(parsed_line.args[0])
 			if fdtracker.is_watched(fd):
 				fdtracker.set_pos(fd, int(parsed_line.ret))
+	elif parsed_line.syscall in ['_llseek']:
+		#print {k:getattr(parsed_line, k) for k in dir(parsed_line) if k[0]!='_'}
+		if int(parsed_line.ret) != -1:
+			fd = safe_string_to_int(parsed_line.args[0])
+			if fdtracker.is_watched(fd):
+				# [0]
+				fdtracker.set_pos(fd, int(parsed_line.args[2][1:-1]))
 	elif parsed_line.syscall in ['truncate', 'ftruncate']:
 		assert int(parsed_line.ret) != -1
 		if parsed_line.syscall == 'truncate':
