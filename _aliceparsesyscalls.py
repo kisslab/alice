@@ -400,6 +400,8 @@ def __get_micro_op(syscall_tid, line, stackinfo, mtrace_recorded):
 	###	1. Access time with read() kind of calls, modification times in general, other attributes
 	###	2. Symlinks
 
+	if parsed_line.syscall[-2:] == '64':
+		parsed_line.syscall = parsed_line.syscall[:-2]
 	if parsed_line.syscall == 'open' or \
 		(parsed_line.syscall == 'openat' and parsed_line.args[0] == 'AT_FDCWD'):
 		if parsed_line.syscall == 'openat':
@@ -590,7 +592,7 @@ def __get_micro_op(syscall_tid, line, stackinfo, mtrace_recorded):
 							print "Warning: File unlinked while being mapped: " + name
 					else:
 						os.rename(replayed_path(name), replayed_path(name) + '.deleted_' + str(uuid.uuid1()))
-	elif parsed_line.syscall == 'lseek':
+	elif parsed_line.syscall in ['lseek', 'llseek', '_llseek']:
 		if int(parsed_line.ret) != -1:
 			fd = safe_string_to_int(parsed_line.args[0])
 			if fdtracker.is_watched(fd):
