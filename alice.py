@@ -240,7 +240,6 @@ def replay_disk_ops(initial_paths_inode_map, rows, replay_dir, stdout_file, use_
 				else:
 					assert False
 			else:
-				print {k:getattr(line, k) for k in dir(line) if k[0]!='_'}
 				if line.dump_file == None:
 					buf = line.override_data
 				else:

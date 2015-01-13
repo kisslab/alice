@@ -97,6 +97,8 @@ def parse_line(line):
 		toret.time = int(time[0]) * 60.0 * 60.0 + int(time[1]) * 60.0 + float(time[2])
 
 		toret.syscall = line[m.start(2) : m.end(2)]
+		if toret.syscall[-2:]=='64':
+			toret.syscall=toret.syscall[:-2]
 		toret.ret = line[m.start(4) : m.end(4)]
 
 		return_explanation = line[m.start(5) : m.end(5)]
@@ -400,8 +402,6 @@ def __get_micro_op(syscall_tid, line, stackinfo, mtrace_recorded):
 	###	1. Access time with read() kind of calls, modification times in general, other attributes
 	###	2. Symlinks
 
-	if parsed_line.syscall[-2:] == '64':
-		parsed_line.syscall = parsed_line.syscall[:-2]
 	if parsed_line.syscall == 'open' or \
 		(parsed_line.syscall == 'openat' and parsed_line.args[0] == 'AT_FDCWD'):
 		if parsed_line.syscall == 'openat':
@@ -455,7 +455,7 @@ def __get_micro_op(syscall_tid, line, stackinfo, mtrace_recorded):
 			if 'O_CLOEXEC' in flags:
 				fd_flags.append('O_CLOEXEC')
 			fdtracker_unwatched.new_fd_mapping(fd, name, 0, fd_flags, 0)
-	elif parsed_line.syscall in ['write', 'writev', 'pwrite', 'pwritev']:	
+	elif parsed_line.syscall in ['write', 'writev', 'pwrite', 'pwritev']:
 		fd = safe_string_to_int(parsed_line.args[0])
 		name = None
 		if fdtracker_unwatched.is_watched(fd):
