@@ -54,7 +54,7 @@ class MultiThreadedChecker(threading.Thread):
 		args = [aliceconfig().checker_tool, dirname, dirname + '.input_stdout']
 		output_stdout = dirname + '.output_stdout'
 		output_stderr = dirname + '.output_stderr'
-		retcode = subprocess.call(args, stdout = open(output_stdout, 'w'), stderr = open(output_stderr, 'w'))
+                retcode = subprocess.call(args, stdout = open(output_stdout, 'w'), stderr = open(output_stderr, 'w'))
 		MultiThreadedChecker.outputs[crashid] = retcode
 		os.system('rm -rf ' + dirname)
 
