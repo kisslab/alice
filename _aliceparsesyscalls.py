@@ -43,7 +43,7 @@ innocent_syscalls = ["_exit","pread","_newselect","_sysctl","accept","accept4","
 "connect","create_module","delete_module","epoll_create","epoll_create1","epoll_ctl","epoll_pwait",
 "epoll_wait","eventfd","eventfd2","exit","exit_group","faccessat","fadvise64",
 "fadvise64_64","fgetxattr","flistxattr","flock","free_hugepages","fstat","fstat64",
-"fstatat64","fstatfs","fstatfs64","ftime","futex","get_kernel_syms","get_mempolicy","get_robust_list",
+"newfstatat","fstatat64","fstatfs","fstatfs64","ftime","futex","get_kernel_syms","get_mempolicy","get_robust_list",
 "get_thread_area","getcpu","getcwd","getdents","getdents64","getegid","getegid32","geteuid",
 "geteuid32","getgid","getgid32","getgroups","getgroups32","getitimer","getpeername","getpagesize",
 "getpgid","getpgrp","getpid","getpmsg","getppid","getpriority","getresgid","getresgid32",
@@ -355,7 +355,8 @@ def __get_backtrace(stackinfo):
 	backtrace = []
 
 	if aliceconfig().ignore_stacktrace: return backtrace
-
+	if not stackinfo:
+		return []
 	assert stackinfo[0] == '['
 	assert stackinfo[-2] == ']'
 	stackinfo = stackinfo[1:-2].strip()
@@ -819,7 +820,8 @@ def __get_micro_op(syscall_tid, line, stackinfo, mtrace_recorded):
 				print 'WARNING: ' + line
 	elif parsed_line.syscall == 'ioctl':
 		fd = int(parsed_line.args[0])
-		assert not fdtracker.is_watched(fd)
+		if len(parsed_line.args) < 2 or parsed_line.args[1] != 'BLKSSZGET':
+			assert not fdtracker.is_watched(fd)
 		if fd not in [0, 1, 2]:
 			name = None
 			if fdtracker_unwatched.is_watched(fd):

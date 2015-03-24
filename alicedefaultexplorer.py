@@ -107,6 +107,10 @@ def stack_repr(op):
 
 
 def default_checks(alice_args, threads = 1):
+	try:
+		threads = int(threads)
+	except:
+		threads = 1
 	print 'Parsing traces to determine logical operations ...'
 	replayer = Replayer(alice_args)
 	replayer.set_fs(defaultfs('count', 1))

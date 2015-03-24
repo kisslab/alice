@@ -48,7 +48,7 @@ subprocess.check_output("cp -R " + args.workload_dir + " " + os.path.join(args.t
 
 if args.verbose:
 	print 'Running workload with strace'
-workload_strace_command = "alice-strace -k -s 0 -ff -tt -o".split(' ') + [os.path.join(args.traces_dir, "strace.out")] + args.remainder
+workload_strace_command = "alice-strace -w -s 0 -ff -tt -o".split(' ') + [os.path.join(args.traces_dir, "strace.out")] + args.remainder
 subprocess.call(workload_strace_command)
 
 if args.verbose:
