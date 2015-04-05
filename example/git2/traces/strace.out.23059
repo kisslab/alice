@@ -1,0 +1,231 @@
+20:18:18.669851 execve("/bin/bash", [...], [/* 33 vars */]) = 0
+20:18:18.670219 brk(0)                  = 0xb8a000
+20:18:18.670320 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.670407 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb85aa27000
+20:18:18.670436 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.670463 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.670487 fstat(3, {st_mode=S_IFREG|0644, st_size=131900, ...}) = 0
+20:18:18.670509 mmap(NULL, 131900, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb85aa06000
+20:18:18.670527 close(3)                = 0
+20:18:18.670545 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.670568 open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.670588 read(3, ""..., 832)     = 832
+20:18:18.670610 fstat(3, {st_mode=S_IFREG|0644, st_size=167096, ...}) = 0
+20:18:18.670629 mmap(NULL, 2264288, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb85a5de000
+20:18:18.670647 mprotect(0x7fb85a603000, 2093056, PROT_NONE) = 0
+20:18:18.670666 mmap(0x7fb85a802000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x24000) = 0x7fb85a802000
+20:18:18.670691 close(3)                = 0
+20:18:18.670709 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.670730 open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.670749 read(3, ""..., 832)     = 832
+20:18:18.670767 fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+20:18:18.670785 mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb85a3da000
+20:18:18.670803 mprotect(0x7fb85a3dd000, 2093056, PROT_NONE) = 0
+20:18:18.670822 mmap(0x7fb85a5dc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fb85a5dc000
+20:18:18.670844 close(3)                = 0
+20:18:18.670862 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.670882 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.670900 read(3, ""..., 832)     = 832
+20:18:18.670917 fstat(3, {st_mode=S_IFREG|0755, st_size=1845024, ...}) = 0
+20:18:18.670935 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb85aa05000
+20:18:18.670955 mmap(NULL, 3953344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb85a014000
+20:18:18.670972 mprotect(0x7fb85a1cf000, 2097152, PROT_NONE) = 0
+20:18:18.670991 mmap(0x7fb85a3cf000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bb000) = 0x7fb85a3cf000
+20:18:18.671012 mmap(0x7fb85a3d5000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb85a3d5000
+20:18:18.671031 close(3)                = 0
+20:18:18.671056 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb85aa03000
+20:18:18.671077 arch_prctl(ARCH_SET_FS, 0x7fb85aa03740) = 0
+20:18:18.671141 mprotect(0x7fb85a3cf000, 16384, PROT_READ) = 0
+20:18:18.671164 mprotect(0x7fb85a5dc000, 4096, PROT_READ) = 0
+20:18:18.671199 mprotect(0x7fb85a802000, 16384, PROT_READ) = 0
+20:18:18.671223 mprotect(0x6ef000, 4096, PROT_READ) = 0
+20:18:18.671244 mprotect(0x7fb85aa29000, 4096, PROT_READ) = 0
+20:18:18.671261 munmap(0x7fb85aa06000, 131900) = 0
+20:18:18.671301 open("/dev/tty", O_RDWR|O_NONBLOCK) = 3
+20:18:18.671324 close(3)                = 0
+20:18:18.671356 brk(0)                  = 0xb8a000
+20:18:18.671373 brk(0xb8b000)           = 0xb8b000
+20:18:18.671394 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.671414 fstat(3, {st_mode=S_IFREG|0644, st_size=4640176, ...}) = 0
+20:18:18.671433 mmap(NULL, 4640176, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb859ba7000
+20:18:18.671453 close(3)                = 0
+20:18:18.671472 brk(0xb8c000)           = 0xb8c000
+20:18:18.671492 brk(0xb8d000)           = 0xb8d000
+20:18:18.671525 getuid()                = 1000
+20:18:18.671542 getgid()                = 1000
+20:18:18.671558 geteuid()               = 1000
+20:18:18.671574 getegid()               = 1000
+20:18:18.671598 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+20:18:18.671625 ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7fff900e8c10) = -1 ENOTTY (Inappropriate ioctl for device)
+20:18:18.671652 brk(0xb8e000)           = 0xb8e000
+20:18:18.671678 open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.671702 fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+20:18:18.671720 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb85aa26000
+20:18:18.671738 read(3, ""..., 1024)    = 1024
+20:18:18.671818 close(3)                = 0
+20:18:18.671836 munmap(0x7fb85aa26000, 4096) = 0
+20:18:18.671856 brk(0xb8f000)           = 0xb8f000
+20:18:18.671895 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fb85a04ad40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.671919 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fb85a04ad40}, 8) = 0
+20:18:18.671938 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.671957 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.671976 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.671995 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.672014 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+20:18:18.672032 rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.672054 uname({sys="Linux", node="zheq-PC", ...}) = 0
+20:18:18.672082 brk(0xb90000)           = 0xb90000
+20:18:18.672106 brk(0xb91000)           = 0xb91000
+20:18:18.672130 brk(0xb92000)           = 0xb92000
+20:18:18.672150 stat("/home/zheq/alice/example/git2/workload_dir", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.672171 stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.672192 getpid()                = 23059
+20:18:18.672215 open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+20:18:18.672235 fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+20:18:18.672254 mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7fb85aa20000
+20:18:18.672272 close(3)                = 0
+20:18:18.672293 brk(0xb93000)           = 0xb93000
+20:18:18.672318 getppid()               = 23054
+20:18:18.672339 stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.672362 stat("/usr/local/go/bin/bash", 0x7fff900e8930) = -1 ENOENT (No such file or directory)
+20:18:18.672382 stat("/home/zheq/alice/bin/bash", 0x7fff900e8930) = -1 ENOENT (No such file or directory)
+20:18:18.672400 stat("/usr/local/sbin/bash", 0x7fff900e8930) = -1 ENOENT (No such file or directory)
+20:18:18.672419 stat("/usr/local/bin/bash", 0x7fff900e8930) = -1 ENOENT (No such file or directory)
+20:18:18.672437 stat("/usr/sbin/bash", 0x7fff900e8930) = -1 ENOENT (No such file or directory)
+20:18:18.672456 stat("/usr/bin/bash", 0x7fff900e8930) = -1 ENOENT (No such file or directory)
+20:18:18.672474 stat("/sbin/bash", 0x7fff900e8930) = -1 ENOENT (No such file or directory)
+20:18:18.672493 stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+20:18:18.672513 stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+20:18:18.672532 geteuid()               = 1000
+20:18:18.672573 getegid()               = 1000
+20:18:18.672602 getuid()                = 1000
+20:18:18.672618 getgid()                = 1000
+20:18:18.672633 access("/bin/bash", X_OK) = 0
+20:18:18.672652 stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+20:18:18.672671 geteuid()               = 1000
+20:18:18.672695 getegid()               = 1000
+20:18:18.672710 getuid()                = 1000
+20:18:18.672726 getgid()                = 1000
+20:18:18.672740 access("/bin/bash", R_OK) = 0
+20:18:18.672757 stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+20:18:18.672776 stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+20:18:18.672798 geteuid()               = 1000
+20:18:18.672813 getegid()               = 1000
+20:18:18.672828 getuid()                = 1000
+20:18:18.672843 getgid()                = 1000
+20:18:18.672858 access("/bin/bash", X_OK) = 0
+20:18:18.672875 stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1021112, ...}) = 0
+20:18:18.672894 geteuid()               = 1000
+20:18:18.672909 getegid()               = 1000
+20:18:18.672924 getuid()                = 1000
+20:18:18.672938 getgid()                = 1000
+20:18:18.672953 access("/bin/bash", R_OK) = 0
+20:18:18.672986 brk(0xb94000)           = 0xb94000
+20:18:18.673006 getpgrp()               = 23043
+20:18:18.673022 rt_sigaction(SIGCHLD, {0x4464c0, [], SA_RESTORER|SA_RESTART, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fb85a04ad40}, 8) = 0
+20:18:18.673045 getrlimit(RLIMIT_NPROC, {rlim_cur=61678, rlim_max=61678}) = 0
+20:18:18.673082 rt_sigprocmask(SIG_BLOCK, NULL, [], 8) = 0
+20:18:18.673102 fcntl(0, F_GETFL)       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+20:18:18.673120 fstat(0, {st_mode=S_IFREG|0600, st_size=89, ...}) = 0
+20:18:18.673139 lseek(0, 0, SEEK_CUR)   = 0
+20:18:18.673162 read(0, ""..., 89)      = 89
+20:18:18.673183 brk(0xb95000)           = 0xb95000
+20:18:18.673225 stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.673244 stat("/usr/local/go/bin/git", 0x7fff900e88f0) = -1 ENOENT (No such file or directory)
+20:18:18.673263 stat("/home/zheq/alice/bin/git", 0x7fff900e88f0) = -1 ENOENT (No such file or directory)
+20:18:18.673281 stat("/usr/local/sbin/git", 0x7fff900e88f0) = -1 ENOENT (No such file or directory)
+20:18:18.673300 stat("/usr/local/bin/git", 0x7fff900e88f0) = -1 ENOENT (No such file or directory)
+20:18:18.673318 stat("/usr/sbin/git", 0x7fff900e88f0) = -1 ENOENT (No such file or directory)
+20:18:18.673336 stat("/usr/bin/git", {st_mode=S_IFREG|0755, st_size=1577256, ...}) = 0
+20:18:18.673355 stat("/usr/bin/git", {st_mode=S_IFREG|0755, st_size=1577256, ...}) = 0
+20:18:18.673374 geteuid()               = 1000
+20:18:18.673389 getegid()               = 1000
+20:18:18.673404 getuid()                = 1000
+20:18:18.673419 getgid()                = 1000
+20:18:18.673433 access("/usr/bin/git", X_OK) = 0
+20:18:18.673451 stat("/usr/bin/git", {st_mode=S_IFREG|0755, st_size=1577256, ...}) = 0
+20:18:18.673469 geteuid()               = 1000
+20:18:18.673484 getegid()               = 1000
+20:18:18.673499 getuid()                = 1000
+20:18:18.673514 getgid()                = 1000
+20:18:18.673529 access("/usr/bin/git", R_OK) = 0
+20:18:18.673546 stat("/usr/bin/git", {st_mode=S_IFREG|0755, st_size=1577256, ...}) = 0
+20:18:18.673565 stat("/usr/bin/git", {st_mode=S_IFREG|0755, st_size=1577256, ...}) = 0
+20:18:18.673583 geteuid()               = 1000
+20:18:18.673598 getegid()               = 1000
+20:18:18.673612 getuid()                = 1000
+20:18:18.673628 getgid()                = 1000
+20:18:18.673642 access("/usr/bin/git", X_OK) = 0
+20:18:18.673659 stat("/usr/bin/git", {st_mode=S_IFREG|0755, st_size=1577256, ...}) = 0
+20:18:18.673678 geteuid()               = 1000
+20:18:18.673693 getegid()               = 1000
+20:18:18.673708 getuid()                = 1000
+20:18:18.673723 getgid()                = 1000
+20:18:18.673739 access("/usr/bin/git", R_OK) = 0
+20:18:18.673757 brk(0xb96000)           = 0xb96000
+20:18:18.673781 brk(0xb97000)           = 0xb97000
+20:18:18.673802 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+20:18:18.673821 lseek(0, -75, SEEK_CUR) = 14
+20:18:18.673838 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb85aa03a10) = 23060
+20:18:18.673931 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.673967 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.674018 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.674038 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.674070 rt_sigaction(SIGINT, {0x4438a0, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.674112 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 23060
+20:18:18.679787 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {0x4438a0, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.679815 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.679835 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=23060, si_status=0, si_utime=0, si_stime=0} ---
+20:18:18.679847 wait4(-1, 0x7fff900e8418, WNOHANG, NULL) = -1 ECHILD (No child processes)
+20:18:18.679865 rt_sigreturn()          = 0
+20:18:18.679886 read(0, ""..., 89)      = 75
+20:18:18.679929 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+20:18:18.679949 lseek(0, -44, SEEK_CUR) = 45
+20:18:18.679967 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb85aa03a10) = 23061
+20:18:18.680065 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.680092 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.680117 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.680140 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.680164 rt_sigaction(SIGINT, {0x4438a0, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.680189 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 23061
+20:18:18.690504 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {0x4438a0, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.690528 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.690548 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=23061, si_status=0, si_utime=0, si_stime=0} ---
+20:18:18.690559 wait4(-1, 0x7fff900e8418, WNOHANG, NULL) = -1 ECHILD (No child processes)
+20:18:18.690577 rt_sigreturn()          = 0
+20:18:18.690597 read(0, ""..., 89)      = 44
+20:18:18.690625 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+20:18:18.690645 lseek(0, -28, SEEK_CUR) = 61
+20:18:18.690662 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb85aa03a10) = 23062
+20:18:18.690753 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.690817 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.690849 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.690890 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.690918 rt_sigaction(SIGINT, {0x4438a0, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.690957 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 23062
+20:18:18.696968 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {0x4438a0, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.696992 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.697011 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=23062, si_status=0, si_utime=0, si_stime=0} ---
+20:18:18.697022 wait4(-1, 0x7fff900e8418, WNOHANG, NULL) = -1 ECHILD (No child processes)
+20:18:18.697040 rt_sigreturn()          = 0
+20:18:18.697061 read(0, ""..., 89)      = 28
+20:18:18.697089 rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+20:18:18.697109 lseek(0, -6, SEEK_CUR)  = 83
+20:18:18.697127 clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fb85aa03a10) = 23063
+20:18:18.697223 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.697288 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.697333 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.697371 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.697419 rt_sigaction(SIGINT, {0x4438a0, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.697446 wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 23063
+20:18:18.702746 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {0x4438a0, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.702769 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.702788 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=23063, si_status=0, si_utime=0, si_stime=0} ---
+20:18:18.702799 wait4(-1, 0x7fff900e8418, WNOHANG, NULL) = -1 ECHILD (No child processes)
+20:18:18.702818 rt_sigreturn()          = 0
+20:18:18.702838 read(0, ""..., 89)      = 6
+20:18:18.702862 read(0, "", 89)         = 0
+20:18:18.702883 rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+20:18:18.702904 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.702931 exit_group(0)           = ?
+20:18:18.702983 +++ exited with 0 +++
