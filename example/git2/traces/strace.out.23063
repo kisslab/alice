@@ -1,0 +1,243 @@
+20:18:18.697235 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+20:18:18.697298 rt_sigaction(SIGTSTP, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.697385 rt_sigaction(SIGTTIN, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.697438 rt_sigaction(SIGTTOU, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.697466 rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.697488 rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7fb85a04ad40}, {SIG_IGN, [], SA_RESTORER, 0x7fb85a04ad40}, 8) = 0
+20:18:18.697508 rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fb85a04ad40}, {0x4464c0, [], SA_RESTORER|SA_RESTART, 0x7fb85a04ad40}, 8) = 0
+20:18:18.697551 execve("/usr/bin/git", [...], [/* 32 vars */]) = 0
+20:18:18.697659 brk(0)                  = 0x257f000
+20:18:18.697684 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.697705 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc2000
+20:18:18.697727 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.697751 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.697771 fstat(3, {st_mode=S_IFREG|0644, st_size=131900, ...}) = 0
+20:18:18.697790 mmap(NULL, 131900, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa1ceda1000
+20:18:18.697809 close(3)                = 0
+20:18:18.697827 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.697850 open("/lib/x86_64-linux-gnu/libpcre.so.3", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.697871 read(3, ""..., 832)     = 832
+20:18:18.697891 fstat(3, {st_mode=S_IFREG|0644, st_size=252032, ...}) = 0
+20:18:18.697911 mmap(NULL, 2347200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa1ce964000
+20:18:18.697930 mprotect(0x7fa1ce9a1000, 2093056, PROT_NONE) = 0
+20:18:18.697950 mmap(0x7fa1ceba0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3c000) = 0x7fa1ceba0000
+20:18:18.697974 close(3)                = 0
+20:18:18.697993 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.698014 open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.698034 read(3, ""..., 832)     = 832
+20:18:18.698052 fstat(3, {st_mode=S_IFREG|0644, st_size=100728, ...}) = 0
+20:18:18.698071 mmap(NULL, 2195784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa1ce74b000
+20:18:18.698091 mprotect(0x7fa1ce763000, 2093056, PROT_NONE) = 0
+20:18:18.698110 mmap(0x7fa1ce962000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fa1ce962000
+20:18:18.698133 close(3)                = 0
+20:18:18.698152 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.698173 open("/lib/x86_64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.698193 read(3, ""..., 832)     = 832
+20:18:18.698212 fstat(3, {st_mode=S_IFREG|0644, st_size=101240, ...}) = 0
+20:18:18.698231 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1ceda0000
+20:18:18.698251 mmap(NULL, 2206376, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa1ce530000
+20:18:18.698270 mprotect(0x7fa1ce547000, 2097152, PROT_NONE) = 0
+20:18:18.698289 mmap(0x7fa1ce747000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fa1ce747000
+20:18:18.698310 mmap(0x7fa1ce749000, 6824, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa1ce749000
+20:18:18.698332 close(3)                = 0
+20:18:18.698351 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.698371 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.698391 read(3, ""..., 832)     = 832
+20:18:18.698408 fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+20:18:18.698427 mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa1ce312000
+20:18:18.698446 mprotect(0x7fa1ce32b000, 2093056, PROT_NONE) = 0
+20:18:18.698468 mmap(0x7fa1ce52a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7fa1ce52a000
+20:18:18.698490 mmap(0x7fa1ce52c000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa1ce52c000
+20:18:18.698511 close(3)                = 0
+20:18:18.698530 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+20:18:18.698552 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.698572 read(3, ""..., 832)     = 832
+20:18:18.698590 fstat(3, {st_mode=S_IFREG|0755, st_size=1845024, ...}) = 0
+20:18:18.698610 mmap(NULL, 3953344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa1cdf4c000
+20:18:18.698629 mprotect(0x7fa1ce107000, 2097152, PROT_NONE) = 0
+20:18:18.698649 mmap(0x7fa1ce307000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bb000) = 0x7fa1ce307000
+20:18:18.698670 mmap(0x7fa1ce30d000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa1ce30d000
+20:18:18.698691 close(3)                = 0
+20:18:18.698715 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1ced9f000
+20:18:18.698738 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1ced9d000
+20:18:18.698758 arch_prctl(ARCH_SET_FS, 0x7fa1ced9d740) = 0
+20:18:18.698814 mprotect(0x7fa1ce307000, 16384, PROT_READ) = 0
+20:18:18.698839 mprotect(0x7fa1ce52a000, 4096, PROT_READ) = 0
+20:18:18.698860 mprotect(0x7fa1ce747000, 4096, PROT_READ) = 0
+20:18:18.698879 mprotect(0x7fa1ce962000, 4096, PROT_READ) = 0
+20:18:18.698899 mprotect(0x7fa1ceba0000, 4096, PROT_READ) = 0
+20:18:18.698922 mprotect(0x779000, 4096, PROT_READ) = 0
+20:18:18.698942 mprotect(0x7fa1cedc4000, 4096, PROT_READ) = 0
+20:18:18.698961 munmap(0x7fa1ceda1000, 131900) = 0
+20:18:18.698985 set_tid_address(0x7fa1ced9da10) = 23063
+20:18:18.699002 set_robust_list(0x7fa1ced9da20, 24) = 0
+20:18:18.699018 futex(0x7fff1c9d30e0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7fa1ced9d740) = -1 EAGAIN (Resource temporarily unavailable)
+20:18:18.699038 rt_sigaction(SIGRTMIN, {0x7fa1ce3189f0, [], SA_RESTORER|SA_SIGINFO, 0x7fa1ce322340}, NULL, 8) = 0
+20:18:18.699057 rt_sigaction(SIGRT_1, {0x7fa1ce318a80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fa1ce322340}, NULL, 8) = 0
+20:18:18.699076 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+20:18:18.699096 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+20:18:18.699134 open("/dev/null", O_RDWR) = 3
+20:18:18.699157 close(3)                = 0
+20:18:18.699203 brk(0)                  = 0x257f000
+20:18:18.699221 brk(0x25a0000)          = 0x25a0000
+20:18:18.699251 open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+20:18:18.699272 fstat(3, {st_mode=S_IFREG|0644, st_size=4640176, ...}) = 0
+20:18:18.699292 mmap(NULL, 4640176, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa1cdadf000
+20:18:18.699312 close(3)                = 0
+20:18:18.699369 getcwd("/home/zheq/alice/example/git2/workload_dir", 4096) = 43
+20:18:18.699391 stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.699412 stat(".git", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.699436 access(".git/objects", X_OK) = 0
+20:18:18.699455 access(".git/refs", X_OK) = 0
+20:18:18.699477 lstat(".git/HEAD", {st_mode=S_IFREG|0664, st_size=23, ...}) = 0
+20:18:18.699497 open(".git/HEAD", O_RDONLY) = 3
+20:18:18.699517 read(3, ""..., 255)     = 23
+20:18:18.699535 read(3, "", 232)        = 0
+20:18:18.699553 close(3)                = 0
+20:18:18.699579 access("/etc/gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.699600 access("/home/zheq/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.699619 access("/home/zheq/.gitconfig", R_OK) = 0
+20:18:18.699642 open("/home/zheq/.gitconfig", O_RDONLY) = 3
+20:18:18.699666 fstat(3, {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
+20:18:18.699684 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.699704 read(3, ""..., 4096)    = 50
+20:18:18.699726 read(3, "", 4096)       = 0
+20:18:18.699748 close(3)                = 0
+20:18:18.699765 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.699785 access(".git/config", R_OK) = 0
+20:18:18.699805 open(".git/config", O_RDONLY) = 3
+20:18:18.699825 fstat(3, {st_mode=S_IFREG|0664, st_size=92, ...}) = 0
+20:18:18.699844 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.699862 read(3, ""..., 4096)    = 92
+20:18:18.699890 read(3, "", 4096)       = 0
+20:18:18.699908 close(3)                = 0
+20:18:18.699925 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.699949 stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.699969 getcwd("/home/zheq/alice/example/git2/workload_dir", 1024) = 43
+20:18:18.699987 chdir(".")              = 0
+20:18:18.700006 getcwd("/home/zheq/alice/example/git2/workload_dir", 4096) = 43
+20:18:18.700024 lstat("/home/zheq/alice/example/git2/workload_dir", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.700044 chdir("/home/zheq/alice/example/git2/workload_dir") = 0
+20:18:18.700068 stat(".git", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.700095 access("/etc/gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.700115 access("/home/zheq/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.700134 access("/home/zheq/.gitconfig", R_OK) = 0
+20:18:18.700154 open("/home/zheq/.gitconfig", O_RDONLY) = 3
+20:18:18.700174 fstat(3, {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
+20:18:18.700193 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.700212 read(3, ""..., 4096)    = 50
+20:18:18.700232 read(3, "", 4096)       = 0
+20:18:18.700250 close(3)                = 0
+20:18:18.700267 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.700287 access(".git/config", R_OK) = 0
+20:18:18.700306 open(".git/config", O_RDONLY) = 3
+20:18:18.700326 fstat(3, {st_mode=S_IFREG|0664, st_size=92, ...}) = 0
+20:18:18.700345 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.700363 read(3, ""..., 4096)    = 92
+20:18:18.700384 read(3, "", 4096)       = 0
+20:18:18.700401 close(3)                = 0
+20:18:18.700418 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.700444 open(".git/index", O_RDONLY) = 3
+20:18:18.700464 fstat(3, {st_mode=S_IFREG|0664, st_size=262, ...}) = 0
+20:18:18.700484 mmap(NULL, 262, PROT_READ|PROT_WRITE, MAP_PRIVATE, 3, 0) = 0x7fa1cedc1000
+20:18:18.700505 close(3)                = 0
+20:18:18.700529 munmap(0x7fa1cedc1000, 262) = 0
+20:18:18.700553 open("/home/zheq/alice/example/git2/workload_dir/.gitmodules", O_RDONLY) = -1 ENOENT (No such file or directory)
+20:18:18.700576 access("/etc/gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.700596 access("/home/zheq/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.700616 access("/home/zheq/.gitconfig", R_OK) = 0
+20:18:18.700636 open("/home/zheq/.gitconfig", O_RDONLY) = 3
+20:18:18.700658 fstat(3, {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
+20:18:18.700677 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.700695 read(3, ""..., 4096)    = 50
+20:18:18.700717 read(3, "", 4096)       = 0
+20:18:18.700735 close(3)                = 0
+20:18:18.700752 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.700771 access(".git/config", R_OK) = 0
+20:18:18.700790 open(".git/config", O_RDONLY) = 3
+20:18:18.700810 fstat(3, {st_mode=S_IFREG|0664, st_size=92, ...}) = 0
+20:18:18.700829 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.700847 read(3, ""..., 4096)    = 92
+20:18:18.700870 read(3, "", 4096)       = 0
+20:18:18.700887 close(3)                = 0
+20:18:18.700905 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.700930 stat(".git", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.700950 getcwd("/home/zheq/alice/example/git2/workload_dir", 1024) = 43
+20:18:18.700968 chdir(".git")           = 0
+20:18:18.700986 getcwd("/home/zheq/alice/example/git2/workload_dir/.git", 4096) = 48
+20:18:18.701006 lstat("/home/zheq/alice/example/git2/workload_dir/.git", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.701030 chdir("/home/zheq/alice/example/git2/workload_dir") = 0
+20:18:18.701050 chdir("/home/zheq/alice/example/git2/workload_dir") = 0
+20:18:18.701072 stat(".git", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+20:18:18.701098 readlink(".git/index", 0x7fff1c9d1d90, 4096) = -1 EINVAL (Invalid argument)
+20:18:18.701118 open(".git/index.lock", O_RDWR|O_CREAT|O_EXCL, 0666) = 3
+20:18:18.701148 rt_sigaction(SIGINT, {0x4afc70, [INT], SA_RESTORER|SA_RESTART, 0x7fa1cdf82d40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.701170 rt_sigaction(SIGHUP, {0x4afc70, [HUP], SA_RESTORER|SA_RESTART, 0x7fa1cdf82d40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.701191 rt_sigaction(SIGTERM, {0x4afc70, [TERM], SA_RESTORER|SA_RESTART, 0x7fa1cdf82d40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.701211 rt_sigaction(SIGQUIT, {0x4afc70, [QUIT], SA_RESTORER|SA_RESTART, 0x7fa1cdf82d40}, {SIG_DFL, [], 0}, 8) = 0
+20:18:18.701231 rt_sigaction(SIGPIPE, {0x4afc70, [PIPE], SA_RESTORER|SA_RESTART, 0x7fa1cdf82d40}, {SIG_IGN, [], 0}, 8) = 0
+20:18:18.701259 lstat("file3", {st_mode=S_IFREG|0664, st_size=16384, ...}) = 0
+20:18:18.701280 open("file3", O_RDONLY) = 4
+20:18:18.701302 read(4, ""..., 16384)   = 16384
+20:18:18.701332 access("/etc/gitconfig", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.701352 access("/home/zheq/.config/git/config", R_OK) = -1 ENOENT (No such file or directory)
+20:18:18.701371 access("/home/zheq/.gitconfig", R_OK) = 0
+20:18:18.701391 open("/home/zheq/.gitconfig", O_RDONLY) = 5
+20:18:18.701413 fstat(5, {st_mode=S_IFREG|0644, st_size=50, ...}) = 0
+20:18:18.701431 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.701451 read(5, ""..., 4096)    = 50
+20:18:18.701471 read(5, "", 4096)       = 0
+20:18:18.701489 close(5)                = 0
+20:18:18.701507 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.701527 access(".git/config", R_OK) = 0
+20:18:18.701546 open(".git/config", O_RDONLY) = 5
+20:18:18.701565 fstat(5, {st_mode=S_IFREG|0664, st_size=92, ...}) = 0
+20:18:18.701584 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.701603 read(5, ""..., 4096)    = 92
+20:18:18.701623 read(5, "", 4096)       = 0
+20:18:18.701641 close(5)                = 0
+20:18:18.701658 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.701681 open("/etc/gitattributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+20:18:18.701703 open("/home/zheq/.config/git/attributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+20:18:18.701724 open(".gitattributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+20:18:18.701748 open(".git/info/attributes", O_RDONLY) = -1 ENOENT (No such file or directory)
+20:18:18.701814 close(4)                = 0
+20:18:18.701839 open("/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 4
+20:18:18.701861 fstat(4, {st_mode=S_IFREG|0644, st_size=2570, ...}) = 0
+20:18:18.701880 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedc1000
+20:18:18.701899 read(4, ""..., 4096)    = 2570
+20:18:18.701927 read(4, "", 4096)       = 0
+20:18:18.701945 close(4)                = 0
+20:18:18.701963 munmap(0x7fa1cedc1000, 4096) = 0
+20:18:18.701990 open("/usr/share/locale/zh_CN/LC_MESSAGES/git.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+20:18:18.702011 open("/usr/share/locale/zh/LC_MESSAGES/git.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+20:18:18.702030 open("/usr/share/locale-langpack/zh_CN/LC_MESSAGES/git.mo", O_RDONLY) = 4
+20:18:18.702050 fstat(4, {st_mode=S_IFREG|0644, st_size=223294, ...}) = 0
+20:18:18.702069 mmap(NULL, 223294, PROT_READ, MAP_PRIVATE, 4, 0) = 0x7fa1ced66000
+20:18:18.702088 close(4)                = 0
+20:18:18.702121 open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 4
+20:18:18.702141 fstat(4, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+20:18:18.702160 mmap(NULL, 26258, PROT_READ, MAP_SHARED, 4, 0) = 0x7fa1cedbb000
+20:18:18.702179 close(4)                = 0
+20:18:18.702197 futex(0x7fa1ce30ca70, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+20:18:18.702226 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+20:18:18.702245 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa1cedba000
+20:18:18.702266 write(1, ""..., 11)     = 11
+20:18:18.702299 unlink("file3")         = 0
+20:18:18.702333 lstat("file1", {st_mode=S_IFREG|0664, st_size=7, ...}) = 0
+20:18:18.702354 open("file1", O_RDONLY) = 4
+20:18:18.702374 read(4, ""..., 7)       = 7
+20:18:18.702394 close(4)                = 0
+20:18:18.702412 lstat("file2", {st_mode=S_IFREG|0664, st_size=4, ...}) = 0
+20:18:18.702431 open("file2", O_RDONLY) = 4
+20:18:18.702450 read(4, ""..., 4)       = 4
+20:18:18.702470 close(4)                = 0
+20:18:18.702490 write(3, ""..., 190)    = 190
+20:18:18.702516 fstat(3, {st_mode=S_IFREG|0664, st_size=190, ...}) = 0
+20:18:18.702535 close(3)                = 0
+20:18:18.702554 rename(".git/index.lock", ".git/index") = 0
+20:18:18.702610 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 8), ...}) = 0
+20:18:18.702632 close(1)                = 0
+20:18:18.702648 munmap(0x7fa1cedba000, 4096) = 0
+20:18:18.702673 exit_group(0)           = ?
+20:18:18.702725 +++ exited with 0 +++

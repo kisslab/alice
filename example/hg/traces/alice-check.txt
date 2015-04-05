@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+ALICE tool version 0.0.1. Please go through the documentation, particularly the
+listed caveats and limitations, before deriving any inferences from this tool. 
+-------------------------------------------------------------------------------
+Parsing traces to determine logical operations ...
+WARNING: UMASK
+WARNING: 21:54:18.394606 symlink("zheq-PC:28931", "/home/zheq/alice/example/hg/workload_dir/.hg/wlock") = 0
+WARNING: 21:54:18.398994 chmod("/home/zheq/alice/example/hg/workload_dir/.hg/.dirstate-esANKb", 0644) = 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Logical operations:
+0	stdout("'adding file1\n'")
+1	creat(".hg/wlock", parent=4887109, mode=438, inode=4895987)
+2	creat(".hg/.dirstate-esANKb", parent=4887109, mode='0600', inode=4895988)
+3	trunc(".hg/.dirstate-esANKb", initial_size=0, inode=4895988, final_size=0)
+4	append(".hg/.dirstate-esANKb", offset=0, count=62, inode=4895988)
+5	rename(dest=".hg/dirstate", source=".hg/.dirstate-esANKb", source_hardlinks=1, source_parent=4887109, dest_size=0, dest_hardlinks=0, source_size=62, dest_parent=4887109, source_inode=4895988, dest_inode=False)
+6	unlink(".hg/wlock", parent=4887109, inode=4895987, size=0, hardlinks=1)
+-------------------------------------
+Finding vulnerabilities...
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Done finding vulnerabilities.
+

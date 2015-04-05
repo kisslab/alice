@@ -1,0 +1,276 @@
+-------------------------------------------------------------------------------
+ALICE tool version 0.0.1. Please go through the documentation, particularly the
+listed caveats and limitations, before deriving any inferences from this tool. 
+-------------------------------------------------------------------------------
+Parsing traces to determine logical operations ...
+Logical operations:
+0	creat(".git/index.lock", parent=3172700, mode='0666', inode=3174846)
+1	mkdir(".git/objects/32", parent=3172721, mode='0777', inode=3174847)
+2	creat(".git/objects/32/tmp_obj_8pIVbV", parent=3174847, mode='0444', inode=3174848)
+3	append(".git/objects/32/tmp_obj_8pIVbV", offset=0, count=22, inode=3174848)
+4	link(dest=".git/objects/32/3fae03f4606ea9991df8befbb2fca795e648fa", source=".git/objects/32/tmp_obj_8pIVbV", source_parent=3174847, dest_parent=3174847, source_inode=3174848)
+5	unlink(".git/objects/32/tmp_obj_8pIVbV", parent=3174847, inode=3174848, size=22, hardlinks=2)
+6	append(".git/index.lock", offset=0, count=176, inode=3174846)
+7	rename(dest=".git/index", source=".git/index.lock", source_hardlinks=1, source_parent=3172700, dest_size=104, dest_hardlinks=1, source_size=176, dest_parent=3172700, source_inode=3174846, dest_inode=3172705)
+8	creat(".git/index.lock", parent=3172700, mode='0666', inode=3174851)
+9	mkdir(".git/objects/a6", parent=3172721, mode='0777', inode=3174852)
+10	creat(".git/objects/a6/tmp_obj_DpMLDV", parent=3174852, mode='0444', inode=3174853)
+11	append(".git/objects/a6/tmp_obj_DpMLDV", offset=0, count=76, inode=3174853)
+12	link(dest=".git/objects/a6/6e5731069ac3c22a12ec1d3b3d93975532ad1d", source=".git/objects/a6/tmp_obj_DpMLDV", source_parent=3174852, dest_parent=3174852, source_inode=3174853)
+13	unlink(".git/objects/a6/tmp_obj_DpMLDV", parent=3174852, inode=3174853, size=76, hardlinks=2)
+14	append(".git/index.lock", offset=0, count=209, inode=3174851)
+15	creat(".git/COMMIT_EDITMSG", parent=3172700, mode='0666', inode=3174854)
+16	append(".git/COMMIT_EDITMSG", offset=0, count=8, inode=3174854)
+17	mkdir(".git/objects/4f", parent=3172721, mode='0777', inode=3174855)
+18	creat(".git/objects/4f/tmp_obj_BudoNV", parent=3174855, mode='0444', inode=3174856)
+19	append(".git/objects/4f/tmp_obj_BudoNV", offset=0, count=125, inode=3174856)
+20	link(dest=".git/objects/4f/ed760d9bff642c0cc90d7d237fafe53b7d1ed3", source=".git/objects/4f/tmp_obj_BudoNV", source_parent=3174855, dest_parent=3174855, source_inode=3174856)
+21	unlink(".git/objects/4f/tmp_obj_BudoNV", parent=3174855, inode=3174856, size=125, hardlinks=2)
+22	creat(".git/refs/heads/master.lock", parent=3172707, mode='0666', inode=3174857)
+23	append(".git/refs/heads/master.lock", offset=0, count=40, inode=3174857)
+24	append(".git/refs/heads/master.lock", offset=40, count=1, inode=3174857)
+25	mkdir(".git/logs", parent=3172700, mode='0777', inode=3174858)
+26	mkdir(".git/logs/refs", parent=3174858, mode='0777', inode=3174859)
+27	mkdir(".git/logs/refs/heads", parent=3174859, mode='0777', inode=3174860)
+28	creat(".git/logs/refs/heads/master", parent=3174860, mode='0666', inode=3174861)
+29	append(".git/logs/refs/heads/master", offset=0, count=153, inode=3174861)
+30	creat(".git/logs/HEAD", parent=3174858, mode='0666', inode=3174862)
+31	append(".git/logs/HEAD", offset=0, count=153, inode=3174862)
+32	rename(dest=".git/refs/heads/master", source=".git/refs/heads/master.lock", source_hardlinks=1, source_parent=3172707, dest_size=0, dest_hardlinks=0, source_size=41, dest_parent=3172707, source_inode=3174857, dest_inode=False)
+33	rename(dest=".git/index", source=".git/index.lock", source_hardlinks=1, source_parent=3172700, dest_size=176, dest_hardlinks=1, source_size=209, dest_parent=3172700, source_inode=3174851, dest_inode=3174846)
+34	stdout("'[master \xef\xbc\x88\xe6\xa0\xb9\xe6\x8f\x90\xe4\xba\xa4\xef\xbc\x89 4fed760] initial\n'")
+35	stdout("' 2 files changed, 2 insertions(+)\n'")
+36	stdout("' create mode 100644 file1\n'")
+37	stdout("' create mode 100644 file2\n'")
+38	creat(".git/index.lock", parent=3172700, mode='0666', inode=3174864)
+39	mkdir(".git/objects/f6", parent=3172721, mode='0777', inode=3174865)
+40	creat(".git/objects/f6/tmp_obj_C2hgKY", parent=3174865, mode='0444', inode=3174866)
+41	append(".git/objects/f6/tmp_obj_C2hgKY", offset=0, count=4096, inode=3174866)
+42	append(".git/objects/f6/tmp_obj_C2hgKY", offset=4096, count=4096, inode=3174866)
+43	append(".git/objects/f6/tmp_obj_C2hgKY", offset=8192, count=4096, inode=3174866)
+44	append(".git/objects/f6/tmp_obj_C2hgKY", offset=12288, count=4096, inode=3174866)
+45	append(".git/objects/f6/tmp_obj_C2hgKY", offset=16384, count=22, inode=3174866)
+46	link(dest=".git/objects/f6/9d5b298c1ee5720c5d3612ce02512062f00d40", source=".git/objects/f6/tmp_obj_C2hgKY", source_parent=3174865, dest_parent=3174865, source_inode=3174866)
+47	unlink(".git/objects/f6/tmp_obj_C2hgKY", parent=3174865, inode=3174866, size=16406, hardlinks=2)
+48	append(".git/index.lock", offset=0, count=262, inode=3174864)
+49	rename(dest=".git/index", source=".git/index.lock", source_hardlinks=1, source_parent=3172700, dest_size=209, dest_hardlinks=1, source_size=262, dest_parent=3172700, source_inode=3174864, dest_inode=3174851)
+50	creat(".git/index.lock", parent=3172700, mode='0666', inode=3174868)
+51	stdout(""rm 'file3'\n"")
+52	unlink("file3", parent=3172699, inode=3172727, size=16384, hardlinks=1)
+53	append(".git/index.lock", offset=0, count=190, inode=3174868)
+54	rename(dest=".git/index", source=".git/index.lock", source_hardlinks=1, source_parent=3172700, dest_size=262, dest_hardlinks=1, source_size=190, dest_parent=3172700, source_inode=3174868, dest_inode=3174864)
+-------------------------------------
+Finding vulnerabilities...
+(Dynamic vulnerability) Across-syscall atomicity, sometimes concerning durability: Operations 22 until 32 need to be atomically persisted
+(Static vulnerability) Across-syscall atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):22 until Unknown (stacktraces not traversable for finding static vulnerabilities):32
+(Dynamic vulnerability) Ordering: Operation 0 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 1 needs to be persisted before 7
+(Dynamic vulnerability) Ordering: Operation 2 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 3 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 4 needs to be persisted before 7
+(Dynamic vulnerability) Ordering: Operation 5 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 6 needs to be persisted before 7
+(Dynamic vulnerability) Ordering: Operation 7 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 8 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 9 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 10 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 11 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 12 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 13 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 14 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 15 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 16 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 17 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 18 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 19 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 20 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 21 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 32 needs to be persisted before 33
+(Dynamic vulnerability) Ordering: Operation 39 needs to be persisted before 49
+(Dynamic vulnerability) Ordering: Operation 41 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 42 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 43 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 44 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 45 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 46 needs to be persisted before 49
+(Dynamic vulnerability) Ordering: Operation 48 needs to be persisted before 49
+(Dynamic vulnerability) Ordering: Operation 53 needs to be persisted before 54
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):20 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):11 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):7 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):39 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):49
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):8 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):12 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):17 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):0 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):19 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):6 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):7
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):32 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):33
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):21 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):10 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):43 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):5 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):46 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):49
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):4 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):7
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):16 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):18 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):42 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):53 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):54
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):15 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):3 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):41 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):48 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):49
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):1 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):7
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):13 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):45 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):14 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):2 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):9 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):44 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Dynamic vulnerability) Atomicity: Operation 7(destination unlinking partial  semi-truncated (3 count splits), destination unlinking partial , destination unlinking partial fully truncated)
+(Dynamic vulnerability) Atomicity: Operation 33(destination unlinking partial  semi-truncated (3 count splits), destination unlinking partial , destination unlinking partial fully truncated)
+(Dynamic vulnerability) Atomicity: Operation 49(destination unlinking partial  semi-truncated (3 count splits), destination unlinking partial , destination unlinking partial fully truncated)
+(Dynamic vulnerability) Atomicity: Operation 54(destination unlinking partial  semi-truncated (3 count splits), destination unlinking partial , destination unlinking partial fully truncated)
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):54 (destination unlinking partial  semi-truncated (3 count splits),destination unlinking partial ,destination unlinking partial fully truncated)
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):7 (destination unlinking partial  semi-truncated (3 count splits),destination unlinking partial ,destination unlinking partial fully truncated)
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):49 (destination unlinking partial  semi-truncated (3 count splits),destination unlinking partial ,destination unlinking partial fully truncated)
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):33 (destination unlinking partial  semi-truncated (3 count splits),destination unlinking partial ,destination unlinking partial fully truncated)
+Done finding vulnerabilities.
+i-------------------------------------------------------------------------------
+ALICE tool version 0.0.1. Please go through the documentation, particularly the
+listed caveats and limitations, before deriving any inferences from this tool. 
+-------------------------------------------------------------------------------
+Parsing traces to determine logical operations ...
+Logical operations:
+0	creat(".git/index.lock", parent=3172700, mode='0666', inode=3174846)
+1	mkdir(".git/objects/32", parent=3172721, mode='0777', inode=3174847)
+2	creat(".git/objects/32/tmp_obj_8pIVbV", parent=3174847, mode='0444', inode=3174848)
+3	append(".git/objects/32/tmp_obj_8pIVbV", offset=0, count=22, inode=3174848)
+4	link(dest=".git/objects/32/3fae03f4606ea9991df8befbb2fca795e648fa", source=".git/objects/32/tmp_obj_8pIVbV", source_parent=3174847, dest_parent=3174847, source_inode=3174848)
+5	unlink(".git/objects/32/tmp_obj_8pIVbV", parent=3174847, inode=3174848, size=22, hardlinks=2)
+6	append(".git/index.lock", offset=0, count=176, inode=3174846)
+7	rename(dest=".git/index", source=".git/index.lock", source_hardlinks=1, source_parent=3172700, dest_size=104, dest_hardlinks=1, source_size=176, dest_parent=3172700, source_inode=3174846, dest_inode=3172705)
+8	creat(".git/index.lock", parent=3172700, mode='0666', inode=3174851)
+9	mkdir(".git/objects/a6", parent=3172721, mode='0777', inode=3174852)
+10	creat(".git/objects/a6/tmp_obj_DpMLDV", parent=3174852, mode='0444', inode=3174853)
+11	append(".git/objects/a6/tmp_obj_DpMLDV", offset=0, count=76, inode=3174853)
+12	link(dest=".git/objects/a6/6e5731069ac3c22a12ec1d3b3d93975532ad1d", source=".git/objects/a6/tmp_obj_DpMLDV", source_parent=3174852, dest_parent=3174852, source_inode=3174853)
+13	unlink(".git/objects/a6/tmp_obj_DpMLDV", parent=3174852, inode=3174853, size=76, hardlinks=2)
+14	append(".git/index.lock", offset=0, count=209, inode=3174851)
+15	creat(".git/COMMIT_EDITMSG", parent=3172700, mode='0666', inode=3174854)
+16	append(".git/COMMIT_EDITMSG", offset=0, count=8, inode=3174854)
+17	mkdir(".git/objects/4f", parent=3172721, mode='0777', inode=3174855)
+18	creat(".git/objects/4f/tmp_obj_BudoNV", parent=3174855, mode='0444', inode=3174856)
+19	append(".git/objects/4f/tmp_obj_BudoNV", offset=0, count=125, inode=3174856)
+20	link(dest=".git/objects/4f/ed760d9bff642c0cc90d7d237fafe53b7d1ed3", source=".git/objects/4f/tmp_obj_BudoNV", source_parent=3174855, dest_parent=3174855, source_inode=3174856)
+21	unlink(".git/objects/4f/tmp_obj_BudoNV", parent=3174855, inode=3174856, size=125, hardlinks=2)
+22	creat(".git/refs/heads/master.lock", parent=3172707, mode='0666', inode=3174857)
+23	append(".git/refs/heads/master.lock", offset=0, count=40, inode=3174857)
+24	append(".git/refs/heads/master.lock", offset=40, count=1, inode=3174857)
+25	mkdir(".git/logs", parent=3172700, mode='0777', inode=3174858)
+26	mkdir(".git/logs/refs", parent=3174858, mode='0777', inode=3174859)
+27	mkdir(".git/logs/refs/heads", parent=3174859, mode='0777', inode=3174860)
+28	creat(".git/logs/refs/heads/master", parent=3174860, mode='0666', inode=3174861)
+29	append(".git/logs/refs/heads/master", offset=0, count=153, inode=3174861)
+30	creat(".git/logs/HEAD", parent=3174858, mode='0666', inode=3174862)
+31	append(".git/logs/HEAD", offset=0, count=153, inode=3174862)
+32	rename(dest=".git/refs/heads/master", source=".git/refs/heads/master.lock", source_hardlinks=1, source_parent=3172707, dest_size=0, dest_hardlinks=0, source_size=41, dest_parent=3172707, source_inode=3174857, dest_inode=False)
+33	rename(dest=".git/index", source=".git/index.lock", source_hardlinks=1, source_parent=3172700, dest_size=176, dest_hardlinks=1, source_size=209, dest_parent=3172700, source_inode=3174851, dest_inode=3174846)
+34	stdout("'[master \xef\xbc\x88\xe6\xa0\xb9\xe6\x8f\x90\xe4\xba\xa4\xef\xbc\x89 4fed760] initial\n'")
+35	stdout("' 2 files changed, 2 insertions(+)\n'")
+36	stdout("' create mode 100644 file1\n'")
+37	stdout("' create mode 100644 file2\n'")
+38	creat(".git/index.lock", parent=3172700, mode='0666', inode=3174864)
+39	mkdir(".git/objects/f6", parent=3172721, mode='0777', inode=3174865)
+40	creat(".git/objects/f6/tmp_obj_C2hgKY", parent=3174865, mode='0444', inode=3174866)
+41	append(".git/objects/f6/tmp_obj_C2hgKY", offset=0, count=4096, inode=3174866)
+42	append(".git/objects/f6/tmp_obj_C2hgKY", offset=4096, count=4096, inode=3174866)
+43	append(".git/objects/f6/tmp_obj_C2hgKY", offset=8192, count=4096, inode=3174866)
+44	append(".git/objects/f6/tmp_obj_C2hgKY", offset=12288, count=4096, inode=3174866)
+45	append(".git/objects/f6/tmp_obj_C2hgKY", offset=16384, count=22, inode=3174866)
+46	link(dest=".git/objects/f6/9d5b298c1ee5720c5d3612ce02512062f00d40", source=".git/objects/f6/tmp_obj_C2hgKY", source_parent=3174865, dest_parent=3174865, source_inode=3174866)
+47	unlink(".git/objects/f6/tmp_obj_C2hgKY", parent=3174865, inode=3174866, size=16406, hardlinks=2)
+48	append(".git/index.lock", offset=0, count=262, inode=3174864)
+49	rename(dest=".git/index", source=".git/index.lock", source_hardlinks=1, source_parent=3172700, dest_size=209, dest_hardlinks=1, source_size=262, dest_parent=3172700, source_inode=3174864, dest_inode=3174851)
+50	creat(".git/index.lock", parent=3172700, mode='0666', inode=3174868)
+51	stdout(""rm 'file3'\n"")
+52	unlink("file3", parent=3172699, inode=3172727, size=16384, hardlinks=1)
+53	append(".git/index.lock", offset=0, count=190, inode=3174868)
+54	rename(dest=".git/index", source=".git/index.lock", source_hardlinks=1, source_parent=3172700, dest_size=262, dest_hardlinks=1, source_size=190, dest_parent=3172700, source_inode=3174868, dest_inode=3174864)
+-------------------------------------
+Finding vulnerabilities...
+(Dynamic vulnerability) Across-syscall atomicity, sometimes concerning durability: Operations 22 until 32 need to be atomically persisted
+(Static vulnerability) Across-syscall atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):22 until Unknown (stacktraces not traversable for finding static vulnerabilities):32
+(Dynamic vulnerability) Ordering: Operation 0 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 1 needs to be persisted before 7
+(Dynamic vulnerability) Ordering: Operation 2 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 3 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 4 needs to be persisted before 7
+(Dynamic vulnerability) Ordering: Operation 5 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 6 needs to be persisted before 7
+(Dynamic vulnerability) Ordering: Operation 7 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 8 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 9 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 10 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 11 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 12 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 13 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 14 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 15 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 16 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 17 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 18 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 19 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 20 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 21 needs to be persisted before 31
+(Dynamic vulnerability) Ordering: Operation 32 needs to be persisted before 33
+(Dynamic vulnerability) Ordering: Operation 39 needs to be persisted before 49
+(Dynamic vulnerability) Ordering: Operation 41 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 42 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 43 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 44 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 45 needs to be persisted before 52
+(Dynamic vulnerability) Ordering: Operation 46 needs to be persisted before 49
+(Dynamic vulnerability) Ordering: Operation 48 needs to be persisted before 49
+(Dynamic vulnerability) Ordering: Operation 53 needs to be persisted before 54
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):20 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):11 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):7 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):39 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):49
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):8 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):12 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):17 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):0 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):19 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):6 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):7
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):32 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):33
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):21 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):10 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):43 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):5 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):46 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):49
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):4 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):7
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):16 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):18 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):42 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):53 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):54
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):15 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):3 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):41 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):48 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):49
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):1 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):7
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):13 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):45 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):14 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):2 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):9 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):31
+(Static vulnerability) Ordering: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):44 needed before Unknown (stacktraces not traversable for finding static vulnerabilities):52
+(Dynamic vulnerability) Atomicity: Operation 7(destination unlinking partial  semi-truncated (3 count splits), destination unlinking partial , destination unlinking partial fully truncated)
+(Dynamic vulnerability) Atomicity: Operation 33(destination unlinking partial  semi-truncated (3 count splits), destination unlinking partial , destination unlinking partial fully truncated)
+(Dynamic vulnerability) Atomicity: Operation 49(destination unlinking partial  semi-truncated (3 count splits), destination unlinking partial , destination unlinking partial fully truncated)
+(Dynamic vulnerability) Atomicity: Operation 54(destination unlinking partial  semi-truncated (3 count splits), destination unlinking partial , destination unlinking partial fully truncated)
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):54 (destination unlinking partial  semi-truncated (3 count splits),destination unlinking partial ,destination unlinking partial fully truncated)
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):7 (destination unlinking partial  semi-truncated (3 count splits),destination unlinking partial ,destination unlinking partial fully truncated)
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):49 (destination unlinking partial  semi-truncated (3 count splits),destination unlinking partial ,destination unlinking partial fully truncated)
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):33 (destination unlinking partial  semi-truncated (3 count splits),destination unlinking partial ,destination unlinking partial fully truncated)
+Done finding vulnerabilities.

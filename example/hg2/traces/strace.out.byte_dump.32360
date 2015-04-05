@@ -1,0 +1,22 @@
+hg commit: option -a not recognized
+hg commit [OPTION]... [FILE]...
+
+commit the specified files or all outstanding changes
+
+options:
+
+ -A --addremove           在提交之前将'新的/丢失的'文件标记为'已增加/已删除'
+    --close-branch        标记一个分支已关闭，不在分支列表中显示
+    --amend               amend the parent of the working dir
+ -s --secret              use the secret phase for committing
+ -I --include PATTERN [+] 包含匹配指定模式的名称
+ -X --exclude PATTERN [+] 拒绝匹配指定模式的名称
+ -m --message TEXT        use text as commit message
+ -l --logfile FILE        read commit message from file
+ -d --date DATE           record the specified date as commit date
+ -u --user USER           record the specified user as committer
+ -S --subrepos            recurse into subrepositories
+
+[+] marked option can be specified multiple times
+
+use "hg help commit" to show the full help text

@@ -1,0 +1,93 @@
+-------------------------------------------------------------------------------
+ALICE tool version 0.0.1. Please go through the documentation, particularly the
+listed caveats and limitations, before deriving any inferences from this tool. 
+-------------------------------------------------------------------------------
+Parsing traces to determine logical operations ...
+WARNING: UMASK
+WARNING: 22:12:55.995206 symlink("zheq-PC:32359", "/home/zheq/alice/example/hg2/workload_dir/.hg/wlock") = 0
+WARNING: 22:12:56.000282 chmod("/home/zheq/alice/example/hg2/workload_dir/.hg/.dirstate-vxQVAZ", 0644) = 0
+WARNING: 22:12:56.253055 symlink("zheq-PC:32361", "/home/zheq/alice/example/hg2/workload_dir/.hg/wlock") = 0
+WARNING: 22:12:56.258963 chmod("/home/zheq/alice/example/hg2/workload_dir/.hg/.dirstate-x6ffxm", 0644) = 0
+WARNING: 22:12:56.386093 chmod("/home/zheq/alice/example/hg2/workload_dir/hg-checkexec-760Bxn", 0711) = 0
+WARNING: 22:12:56.387102 symlink("zheq-PC:32362", "/home/zheq/alice/example/hg2/workload_dir/.hg/wlock") = 0
+WARNING: 22:12:56.387758 chmod("/home/zheq/alice/example/hg2/workload_dir/.hg/.dirstate-Is_SUF", 0644) = 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Logical operations:
+0	creat(".hg/wlock", parent=4976352, mode=438, inode=4979822)
+1	creat(".hg/.dirstate-vxQVAZ", parent=4976352, mode='0600', inode=4979823)
+2	trunc(".hg/.dirstate-vxQVAZ", initial_size=0, inode=4979823, final_size=0)
+3	append(".hg/.dirstate-vxQVAZ", offset=0, count=62, inode=4979823)
+4	rename(dest=".hg/dirstate", source=".hg/.dirstate-vxQVAZ", source_hardlinks=1, source_parent=4976352, dest_size=0, dest_hardlinks=0, source_size=62, dest_parent=4976352, source_inode=4979823, dest_inode=False)
+5	unlink(".hg/wlock", parent=4976352, inode=4979822, size=0, hardlinks=1)
+6	stdout("'hg commit [OPTION]... [FILE]...\n'")
+7	stdout("'\n'")
+8	stdout("'commit the specified files or all outstanding changes\n'")
+9	stdout("'\n'")
+10	stdout("'options:\n'")
+11	stdout("'\n'")
+12	stdout("" -A --addremove           \xe5\x9c\xa8\xe6\x8f\x90\xe4\xba\xa4\xe4\xb9\x8b\xe5\x89\x8d\xe5\xb0\x86'\xe6\x96\xb0\xe7\x9a\x84/\xe4\xb8\xa2\xe5\xa4\xb1\xe7\x9a\x84'\xe6\x96\x87\xe4\xbb\xb6\xe6\xa0\x87\xe8\xae\xb0\xe4\xb8\xba'\xe5\xb7\xb2\xe5\xa2\x9e\xe5\x8a\xa0/\xe5\xb7\xb2\xe5\x88\xa0\xe9\x99\xa4'\n"")
+13	stdout("'    --close-branch        \xe6\xa0\x87\xe8\xae\xb0\xe4\xb8\x80\xe4\xb8\xaa\xe5\x88\x86\xe6\x94\xaf\xe5\xb7\xb2\xe5\x85\xb3\xe9\x97\xad\xef\xbc\x8c\xe4\xb8\x8d\xe5\x9c\xa8\xe5\x88\x86\xe6\x94\xaf\xe5\x88\x97\xe8\xa1\xa8\xe4\xb8\xad\xe6\x98\xbe\xe7\xa4\xba\n'")
+14	stdout("'    --amend               amend the parent of the working dir\n'")
+15	stdout("' -s --secret              use the secret phase for committing\n'")
+16	stdout("' -I --include PATTERN [+] \xe5\x8c\x85\xe5\x90\xab\xe5\x8c\xb9\xe9\x85\x8d\xe6\x8c\x87\xe5\xae\x9a\xe6\xa8\xa1\xe5\xbc\x8f\xe7\x9a\x84\xe5\x90\x8d\xe7\xa7\xb0\n'")
+17	stdout("' -X --exclude PATTERN [+] \xe6\x8b\x92\xe7\xbb\x9d\xe5\x8c\xb9\xe9\x85\x8d\xe6\x8c\x87\xe5\xae\x9a\xe6\xa8\xa1\xe5\xbc\x8f\xe7\x9a\x84\xe5\x90\x8d\xe7\xa7\xb0\n'")
+18	stdout("' -m --message TEXT        use text as commit message\n'")
+19	stdout("' -l --logfile FILE        read commit message from file\n'")
+20	stdout("' -d --date DATE           record the specified date as commit date\n'")
+21	stdout("' -u --user USER           record the specified user as committer\n'")
+22	stdout("' -S --subrepos            recurse into subrepositories\n'")
+23	stdout("'\n'")
+24	stdout("'[+] marked option can be specified multiple times\n'")
+25	stdout("'\n'")
+26	stdout("'use "hg help commit" to show the full help text\n'")
+27	stdout("'adding file2\n'")
+28	stdout("'adding file3\n'")
+29	creat(".hg/wlock", parent=4976352, mode=438, inode=4979826)
+30	creat(".hg/.dirstate-x6ffxm", parent=4976352, mode='0600', inode=4979827)
+31	trunc(".hg/.dirstate-x6ffxm", initial_size=0, inode=4979827, final_size=0)
+32	append(".hg/.dirstate-x6ffxm", offset=0, count=106, inode=4979827)
+33	rename(dest=".hg/dirstate", source=".hg/.dirstate-x6ffxm", source_hardlinks=1, source_parent=4976352, dest_size=62, dest_hardlinks=1, source_size=106, dest_parent=4976352, source_inode=4979827, dest_inode=4979823)
+34	unlink(".hg/wlock", parent=4976352, inode=4979826, size=0, hardlinks=1)
+35	creat("hg-checkexec-760Bxn", parent=4976349, mode='0600', inode=4979830)
+36	unlink("hg-checkexec-760Bxn", parent=4976349, inode=4979830, size=0, hardlinks=1)
+37	creat(".hg/wlock", parent=4976352, mode=438, inode=4979832)
+38	creat(".hg/.dirstate-Is_SUF", parent=4976352, mode='0600', inode=4979833)
+39	trunc(".hg/.dirstate-Is_SUF", initial_size=0, inode=4979833, final_size=0)
+40	append(".hg/.dirstate-Is_SUF", offset=0, count=84, inode=4979833)
+41	rename(dest=".hg/dirstate", source=".hg/.dirstate-Is_SUF", source_hardlinks=1, source_parent=4976352, dest_size=106, dest_hardlinks=1, source_size=84, dest_parent=4976352, source_inode=4979833, dest_inode=4979827)
+42	unlink(".hg/wlock", parent=4976352, inode=4979832, size=0, hardlinks=1)
+-------------------------------------
+Finding vulnerabilities...
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+Warning: trunc_disk_ops called for the same initial and final size, 0
+(Dynamic vulnerability) Atomicity: Operation 33(destination unlinking partial  semi-truncated (3 count splits))
+(Dynamic vulnerability) Atomicity: Operation 41(destination unlinking partial  semi-truncated (3 count splits))
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):41 (destination unlinking partial  semi-truncated (3 count splits))
+(Static vulnerability) Atomicity: Operation Unknown (stacktraces not traversable for finding static vulnerabilities):33 (destination unlinking partial  semi-truncated (3 count splits))
+Done finding vulnerabilities.
+
