@@ -27,6 +27,7 @@ sys.path.append(os.getenv("ALICE_HOME"))
 import subprocess
 import pickle
 import alicedefaultexplorer
+import exceptions
 
 __author__ = "Thanumalayan Sankaranarayana Pillai"
 __copyright__ = "Copyright 2014, Thanumalayan Sankaranarayana Pillai"
@@ -34,10 +35,17 @@ __credits__ = ["Thanumalayan Sankaranarayana Pillai", "Vijay Chidambaram",
 	"Ramnatthan Alagappan", "Samer Al-Kiswany"]
 __license__ = "MIT"
 
+def get_cpu_cores():
+	try:
+		import multiprocessing
+		return multiprocessing.cpu_count()
+	except exceptions.NotImplemented, exceptions.ImportError:
+		return 4
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--checker', required = True, help = 'Location of the checker')
 parser.add_argument('--traces_dir', required = True, help = 'Location of the traces directory')
-parser.add_argument('--threads', type = int, default = 4)
+parser.add_argument('--threads', type = int, default = get_cpu_cores())
 parser.add_argument('--debug_level', type = int, default = 0, choices = range(0, 3))
 parser.add_argument('--ignore_mmap', type = bool, default = False)
 
